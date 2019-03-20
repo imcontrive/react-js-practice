@@ -3,7 +3,8 @@
   align-content: center;
 }
 body {
-  background: linear-gradient(to right, #457fca , #5691c8 );
+  /* background: linear-gradient(to right, #457fca , #5691c8 ); */
+  background: linear-gradient(to right,  #136a8a , #267871 );
   font-family: 'Helvetica Neue';
 }
 .box{
