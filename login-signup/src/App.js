@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Login from './components/Login';
+import User from './components/User';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      user: {
+        firstName : "Ankit",
+        lastName : "Sinha",
+        img: `https://pbs.twimg.com/profile_images/1019277956286304256/DBOt4zgP_400x400.jpg`
+      }
+    }
+  }
+
+ 
   render() {
+    const { user } = this.state;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <>
+      <Login />
+      </>
+    )
   }
 }
 
