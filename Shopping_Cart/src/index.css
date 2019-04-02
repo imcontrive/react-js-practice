@@ -1,0 +1,37 @@
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  border: 1px dotted gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+input {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+input:hover {
+  box-shadow:0 0 8px blue;
+}
+.submitbtn {
+  padding: 20px;
+  text-align: center;
+}
+#btn {
+  background:blueviolet;
+  color: white;
+  padding: 8px 30px;
+  border: 0;
+  border-radius: 12px;
+}
+#btn:hover {
+  background: coral;
+  color:white;
+  cursor: pointer;
+}
+.userinfo {
+  background:blueviolet;
+}
