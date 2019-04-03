@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CartItems from './components/CartItems';
 
 
 class App extends Component {
@@ -10,16 +11,17 @@ class App extends Component {
     }
   }
   componentDidMount = () => {
-    fetch(`https://react-shopping-cart-67954.firebaseio.com/products.json`).
-  }
+    fetch("https://react-shopping-cart-67954.firebaseio.com/products.json")
+    .then(res => res.json())
+    .then(data => 
+      this.setState({
+        items : data
+      })
+    )}
   
- 
   render() {
-    const { user } = this.state;
     return (
-      <>
-      <Login />
-      </>
+      <CartItems items={this.state.items} />
     )
   }
 }
