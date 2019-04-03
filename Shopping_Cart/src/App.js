@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
+import LeftSidebar from './components/LeftSidebar';
 import './App.css';
-import CartItems from './components/CartItems';
+import Products from './components/Products';
 
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      items: null
+      items: []
     }
   }
   componentDidMount = () => {
     fetch("https://react-shopping-cart-67954.firebaseio.com/products.json")
     .then(res => res.json())
-    .then(data => 
+    .then(({products} )=> 
       this.setState({
-        items : data
+        items : products
       })
     )}
-  
+
   render() {
     return (
-      <CartItems items={this.state.items} />
+      <>
+        <LeftSidebar />
+        < Products items={this.state.items}/>
+      </>
     )
   }
 }

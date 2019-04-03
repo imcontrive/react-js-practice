@@ -4,7 +4,7 @@
   grid-gap: 5px;
   /* border:1px solid gray; */
 }
-span {
+.circle-span {
   width: 25px;
   height: 25px;
   background:rgb(219, 217, 217);
@@ -17,7 +17,7 @@ span {
   align-items: center;
   border: 1px solid transparent;
 }
-span:hover {
+.circle-span:hover {
   border: 1px solid;
 }
 p {
