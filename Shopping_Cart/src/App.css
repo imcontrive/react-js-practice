@@ -1,8 +1,13 @@
+.main-wrapper {
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+}
 .isFilter {
+  max-width: 25vw;
   width: 200px;
   display:grid;
   grid-gap: 5px;
-  /* border:1px solid gray; */
 }
 .circle-span {
   width: 25px;
@@ -26,13 +31,13 @@ p {
   font-family: serif;
   color: rgb(156, 156, 156);
 }
-.btn {
+/* .btn {
   width: 150px;
   margin: 0 auto;
   color: black;
   font-weight: 700;
-}
-button {
+} */
+/* .btn {
   width: 55px;
   height: 30px;
   font-size: 10px;
@@ -41,4 +46,55 @@ button {
 }
 .btn2:hover {
   color: blue;
+} */
+.Products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  width: 900px;
+  padding-left: 30px;
+}
+.text-center {
+  text-align: center;
+}
+.products {
+  width: 200px;
+  border: 1px solid transparent;
+  padding:8px 5px ;
+}
+h5 {
+  font-size: 22px;
+}
+.products:hover {
+  border: 1px solid rgb(175, 174, 174);
+  cursor: pointer;
+}
+.installments {
+  display: block;
+  color:rgb(160, 160, 159);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+button {
+  width: 100%;
+  padding:12px 25px ;
+  background: black;
+  color: white;
+  border:none;
+  font-size: 16px;
+}
+.products:hover button{
+  background:rgb(228, 228, 4);
+}
+hr {
+  width: 9%;
+  border-radius: 5px;
+  border: 1px solid rgb(248,164,155);
+
+}
+.title {
+  font-size: 14px;
+  font-weight: 500;
 }

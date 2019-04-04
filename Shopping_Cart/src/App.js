@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LeftSidebar from './components/LeftSidebar';
 import './App.css';
 import Products from './components/Products';
+import Header from './components/Header';
 
 
 class App extends Component {
@@ -22,9 +23,12 @@ class App extends Component {
 
   render() {
     return (
-      <>
-        <LeftSidebar />
-        < Products items={this.state.items}/>
+     <>
+      < Header/>
+        <div className="main-wrapper">
+          <LeftSidebar />
+          < Products items={this.state.items}/>
+        </div>
       </>
     )
   }
