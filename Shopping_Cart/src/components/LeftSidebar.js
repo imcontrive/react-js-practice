@@ -15,10 +15,6 @@ export default class LeftSidebar extends Component {
           <span className="circle-span">XL</span>
           <span className="circle-span">XXL</span>
           <p>Leave a star on Github if this repository was useful :)</p>
-            {/* <div className="btn">
-            <button className="btn">⭐Star</button>
-            <button className="btn btn2">500</button> */}
-            {/* </div> */}
         </div>
         </div>
       </div> 

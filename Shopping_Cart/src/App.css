@@ -31,22 +31,6 @@ p {
   font-family: serif;
   color: rgb(156, 156, 156);
 }
-/* .btn {
-  width: 150px;
-  margin: 0 auto;
-  color: black;
-  font-weight: 700;
-} */
-/* .btn {
-  width: 55px;
-  height: 30px;
-  font-size: 10px;
-  margin-left: 5px;
-  padding: 5px 10px;
-}
-.btn2:hover {
-  color: blue;
-} */
 .Products-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
