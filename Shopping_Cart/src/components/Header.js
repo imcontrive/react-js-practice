@@ -4,7 +4,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-       <div>Header<i class="fas fa-cart-plus"></i></div>
+       <div>Header<i className="fas fa-cart-plus"/></div>
       </div>
     )
   }
